@@ -4,7 +4,6 @@ import by.hometrainng.consolecalculator.utils.Patterns
 import java.util.*
 import java.util.regex.Pattern
 
-
 class CalcService {
     private val priorityMap: Map<String, Int> = mapOf(
         "+" to 0,
@@ -14,6 +13,7 @@ class CalcService {
     )
 
     fun calc(expression: String): String {
+        //   5+7
         //   5+5/3+7*9
         //   (5+5)/3+7*9
         var result: String = expression.replace(Patterns.SPACES, "")
