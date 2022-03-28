@@ -6,8 +6,6 @@ import java.util.regex.Pattern
 
 
 class CalcService {
-
-
     private val priorityMap: Map<String, Int> = mapOf(
         "+" to 0,
         "-" to 0,
@@ -106,5 +104,4 @@ class CalcService {
             }
             return index
         }
-
     }
